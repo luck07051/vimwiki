@@ -9,7 +9,6 @@
 zz zt zb
 
 # *         scearch the word under the cursor
-                # like ?, * like /
 
 
 ```
