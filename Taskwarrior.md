@@ -5,7 +5,7 @@ task [ <filter> ] [ <command> ] [ <modifications> | <miscellaneous> ]
 
 
 
-priority: H|M|L 
+priority: H|M|L
 
 due:<due-date>
 
