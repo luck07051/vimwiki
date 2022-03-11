@@ -7,43 +7,69 @@ You can mount hard drives or even network shares in a empty directory.
 
 ```
 root /
+│
+├── home            User's home
+│
+├── root            Root user's home.
+│
+│
 ├── bin             Essential command binaries. Available in single-user mode.
 │
-├── boot            Boot loader files.
-│                   Contains everything OS needs to boot.
-│
-├── dev             Device files. All devices live in here.
-│
-├── etc             System-wide configuration files.
-│
-├── home
+├── sbin            Essential *system* binaries. Available in single-user mode.
 │
 ├── lib             Libraries essential for the binaries.
 ├── lib64
 │
-├── lost+found
+├── opt             Add-on application software packages.
+│
+├── etc             Editable text config.
+│                   System-wide configuration files.
+│
+├── usr             UNIX system resources.
+│   │               User application space. Opposed to the bin directory.
+│   │
+│   ├── bin         Non-essential command binaries for all users.
+│   ├── sbin        Non-essential system binaries.
+│   ├── lib         Libraries for the binaries in /usr/bin and /usr/sbin.
+│   ├── include     Standard include files.
+│   ├── src         Source code.
+│   ├── share
+│   └── local       Local data, specific to this host.
+│       ├── bin
+│       ├── sbin
+│       ├── lib
+│       ├── share
+│       └── ...
+│
+├── var             Varible directory. Contains the files that will
+│   │               constantly grow in size as you use the system.
+│   ├── cache
+│   ├── log
+│   └── ...
+│
+│
+├── dev             Device files. All devices live in here.
 │
 ├── media           Other mounted drives. let OS manage.
 │
 ├── mnt             Other manually mounted drives.
 │
-├── opt             Add-on application software packages.
 │
-├── proc
+├── boot            Boot loader files.
+│                   Contains everything OS needs to boot.
 │
-├── root
+├── proc            Include process and kernal informatoin as files.
+│                   Automatically generated and instant update.
 │
-├── run
+├── run             Temporary filesystem runs in RAM.
+│                   Store runtime information.
 │
-├── sbin            Essential *system* binaries. Available in single-user mode.
+├── sys             Interface to the kernel, also have information and
+│                   configuration that kernel provides or information
+│                   about devices and drivers.
 │
-├── srv
+├── srv             Service data.
 │
-├── sys
-│
-├── tmp
-│
-├── usr
-│
-└── var
+└── tmp             Temporary directory.
+
 ```
