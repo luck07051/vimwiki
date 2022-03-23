@@ -5,7 +5,6 @@
 
 
 
-useful command I alway forgot
 
 * fd
 * ripgrep (rg
