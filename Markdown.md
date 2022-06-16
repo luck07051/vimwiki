@@ -7,7 +7,7 @@
 <strong>bold</strong>
 
 *Italic* <br>
-<em>Italic<em>
+<em>Italic</em>
 
 ~~Strikethrough~~
 
